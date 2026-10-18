@@ -345,8 +345,8 @@
 (function(){
  const music=document.getElementById('birthdayMusic');
  const button=document.getElementById('musicToggle');
- async function startMusic(){try{await music.play();button.textContent='🔊 Pause Birthday Music';button.setAttribute('aria-label','Pause ');}catch(e){button.textContent='🎵 Play Birthday Music';button.setAttribute('aria-label','Play ');}}
- function pauseMusic(){music.pause();button.textContent='🎵 Play Birthday Music';button.setAttribute('aria-label','Play ');}
+ async function startMusic(){try{await music.play();button.textContent='🔊';button.setAttribute('aria-label','Pause ');}catch(e){button.textContent='🎵 Play Birthday Music';button.setAttribute('aria-label','Play ');}}
+ function pauseMusic(){music.pause();button.textContent='🎵';button.setAttribute('aria-label','Play ');}
  button.addEventListener('click',function(){if(music.paused)startMusic();else pauseMusic();});
  window.addEventListener('load',startMusic);
 })();
