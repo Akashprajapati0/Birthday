@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<!-- Birthday page personalized for Amisha by Akash -->
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Happy Birthday, Amisha</title>
+    <meta name="theme-color" content="#1a1240">
+    <link href="./Happy Birthday, Sudeep_files/css2" rel="stylesheet">
+    <link rel="stylesheet" href="./Happy Birthday, Sudeep_files/style.css">
+    <script src="./Happy Birthday, Sudeep_files/confetti.browser.min.js.download"></script>
+    <style type="text/css" id="mytempCss">
+        ._8mqQwQ {
+            display: none;
+        }
+
+        ._1TWLMK.icF5zO {
+            opacity: 0.01;
+        }
+    </style>
+
+
+    <style id="birthday-card-responsive-fix">
+        /* Keep the existing desktop card design */
+        #cardContainer {
+            width: min(600px, calc(100% - 32px)) !important;
+            height: 640px !important;
+            min-height: 0 !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            overflow: visible !important;
+            perspective: 1200px;
+        }
+
+        #card {
+            width: 100% !important;
+            height: 100% !important;
+            min-height: 0 !important;
+            position: relative;
+            transform-style: preserve-3d;
+        }
+
+            #card .card-side {
+                box-sizing: border-box !important;
+                width: 100% !important;
+                height: 100% !important;
+                min-height: 0 !important;
+                padding: 24px clamp(16px, 4vw, 30px) !important;
+                border-radius: 30px !important;
+                overflow-wrap: break-word;
+            }
+
+                #card .card-side.back {
+                    justify-content: center !important;
+                    overflow-y: auto !important;
+                    -webkit-overflow-scrolling: touch;
+                    padding-top: 24px !important;
+                    padding-bottom: 24px !important;
+                }
+
+                    #card .card-side.back h2 {
+                        margin: 0 0 14px !important;
+                        line-height: 1.25 !important;
+                        font-size: clamp(1.35rem, 3.5vw, 2rem) !important;
+                    }
+
+                    #card .card-side.back p {
+                        line-height: 1.5 !important;
+                        font-size: clamp(.98rem, 2.3vw, 1.2rem) !important;
+                        margin: 0 !important;
+                    }
+
+                #card .card-side.front h1 {
+                    font-size: clamp(1.7rem, 5vw, 2.5rem) !important;
+                    text-align: center;
+                }
+
+                #card .card-side.front h3 {
+                    text-align: center;
+                }
+
+                #card .card-side.front svg {
+                    width: min(120px, 32vw);
+                    height: auto;
+                }
+
+        /* Mobile responsiveness only */
+        @media screen and (max-width: 600px) {
+            .wrap {
+                width: 100%;
+                max-width: 100%;
+                box-sizing: border-box;
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+
+            section {
+                max-width: 100%;
+                box-sizing: border-box;
+            }
+
+            .hero img,
+            .banner {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .user-frame img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .wish-card {
+                max-width: 100%;
+                box-sizing: border-box;
+                overflow-wrap: break-word;
+            }
+
+                .wish-card p {
+                    font-size: 15px;
+                    line-height: 1.65;
+                    overflow-wrap: anywhere;
+                }
+
+            .cake-img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .gallery-stage {
+                max-width: 100%;
+                overflow: hidden;
+            }
+
+            #cardContainer {
+                width: 100% !important;
+                height: 480px !important;
+                margin: 0 auto !important;
+            }
+
+            #card {
+                width: 100% !important;
+                height: 100% !important;
+            }
+
+                #card .card-side {
+                    padding: 18px 15px !important;
+                    border-radius: 22px !important;
+                }
+
+                    #card .card-side.back {
+                        justify-content: flex-start !important;
+                        overflow-y: auto !important;
+                        padding: 22px 17px !important;
+                    }
+
+                        #card .card-side.back h2 {
+                            font-size: 1.35rem !important;
+                            line-height: 1.3 !important;
+                            margin-bottom: 12px !important;
+                        }
+
+                        #card .card-side.back p {
+                            font-size: 14px !important;
+                            line-height: 1.55 !important;
+                        }
+
+                    #card .card-side.front h1 {
+                        font-size: clamp(1.5rem, 7vw, 2rem) !important;
+                    }
+
+                    #card .card-side.front h3 {
+                        font-size: 14px;
+                    }
+
+                    #card .card-side.front svg {
+                        width: 90px;
+                        max-width: 30vw;
+                    }
+
+            .music-control {
+                right: 10px;
+                bottom: 10px;
+                max-width: calc(100% - 20px);
+                box-sizing: border-box;
+            }
+        }
+
+        /* Extra-small mobile screens */
+        @media screen and (max-width: 380px) {
+            .wrap {
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+
+            #cardContainer {
+                width: 100% !important;
+                height: 450px !important;
+            }
+
+            #card .card-side {
+                padding: 15px 12px !important;
+            }
+
+                #card .card-side.back {
+                    padding: 18px 13px !important;
+                }
+
+                    #card .card-side.back h2 {
+                        font-size: 1.2rem !important;
+                    }
+
+                    #card .card-side.back p {
+                        font-size: 13px !important;
+                        line-height: 1.5 !important;
+                    }
+        }
+    </style>
+
+    <style>
+        .music-control {
+            position: fixed;
+            right: 18px;
+            bottom: 18px;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 15px;
+            border: 1px solid #ffd9ec99;
+            border-radius: 999px;
+            background: rgba(35,20,64,.92);
+            color: #fff5fc;
+            font: 600 14px Arial,sans-serif;
+            box-shadow: 0 5px 22px #0004;
+            cursor: pointer;
+            backdrop-filter: blur(8px)
+        }
+
+            .music-control:hover {
+                background: rgba(75,38,94,.96)
+            }
+
+            .music-control:focus-visible {
+                outline: 2px solid #ffd166;
+                outline-offset: 3px
+            }
+    </style>
+</head>
+<body>
+
+<canvas id="skyCanvas" width="1280" height="585"></canvas>
+<div class="moon"></div>
+<div class="cloud cloud1"></div>
+<div class="cloud cloud2"></div>
+
+<!-- Place birthday.mp3 in the Happy Birthday, Sudeep_files folder -->
+<audio id="birthdayMusic" src="./Happy Birthday, Sudeep_files/birthday.mp3" loop preload="auto"></audio>
+<button id="musicToggle" class="music-control" type="button" aria-label="Play birthday music"> 🎶</button>
+
+<div class="wrap">
+
+  <section class="hero">
+    <img src="./Happy Birthday, Sudeep_files/banner.png" alt="Happy Birthday banner" class="banner reveal reveal-flip">
+    <div class="user-frame reveal tilt"><img src="./Happy Birthday, Sudeep_files/user.png" alt="Amisha"></div>
+    <div class="typewrap reveal" aria-live="polite"><span id="typewriter">Happy Birthday, Amisha</span><span class="cursor" aria-hidden="true"></span></div>
+  </section>
+
+  <section>
+    <div class="wish-card reveal tilt">
+      <div class="sparkles" id="sparkles"></div>
+      <div class="badge">🌙</div>
+      <h1>Hey, Amisha</h1>
+      <p>
+        Hi, Sweetu sending you a little birthday surprise filled with love. 🌸<br><br>
+        Picture a quiet sky, a paper moon, and sakura petals drifting past just for you. I made this little page to bring a smile to your face and make your birthday feel a little more special. ✨<br><br>
+        I love your cute smile, and I hope you keep smiling like this always. May your days be filled with happiness, your heart with peace, and your life with people and moments that make you feel loved. ❤️<br><br>
+        May all your dreams come true, and may every wish you make bring you closer to everything you hope for. And if you make one extra wish tonight, I hope my name is in it too. 🥹😘<br><br>
+        So make a wish, scroll slowly, and enjoy every bit of your <span class="glow">Happy Birthday ✨</span><br><br>
+        Wishing you soft mornings, loud laughter, lovely surprises, and a year full of reasons to smile. 🌺
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="cake-wrap reveal"><div class="flame"></div><img src="./Happy Birthday, Sudeep_files/cake.svg" alt="Birthday cake" class="cake-img"></div>
+  </section>
+
+  <section>
+    <div class="section-title reveal">Starlit Memories</div>
+    <div class="gallery-stage reveal reveal-left tilt">
+      <div id="cube" class="cube">
+        <div class="face face1" style="background-image:url('./Happy Birthday, Sudeep_files/user1.png')"></div>
+        <div class="face face2" style="background-image:url('./Happy Birthday, Sudeep_files/user2.png')"></div>
+        <div class="face face3" style="background-image:url('./Happy Birthday, Sudeep_files/user3.png')"></div>
+        <div class="face face4" style="background-image:url('./Happy Birthday, Sudeep_files/user4.png')"></div>
+      </div>
+    </div>
+    <div class="gallery-ui reveal">
+      <button id="prevImg" aria-label="Previous photo">◀</button>
+      <button id="nextImg" aria-label="Next photo">▶</button>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title reveal">One Last Wish</div>
+    <div class="card-container reveal reveal-right" id="cardContainer">
+      <div class="card" id="card">
+        <div class="card-side front">
+          <h1>Happy Birthday</h1>
+          <h3>tap to open your card</h3>
+          <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="60" cy="60" r="34" fill="#ffd9ec"></circle>
+            <path d="M60 26a34 34 0 1 0 34 34 27 27 0 0 1-34-34z" fill="#fff6fb"></path>
+            <circle cx="30" cy="24" r="2.4" fill="#ffd166"></circle>
+            <circle cx="96" cy="40" r="1.8" fill="#ffd166"></circle>
+            <circle cx="14" cy="70" r="1.6" fill="#ffd166"></circle>
+            <circle cx="100" cy="86" r="2" fill="#ffd166"></circle>
+          </svg>
+          <button class="open-button" id="toggleButton">Open Card</button>
+        </div>
+        <div class="card-side back">
+          <h2>Happy Birthday, Amisha</h2>
+          <p>
+            Another year, another chapter and I hope this one brings you more happiness than you can imagine.<br><br>
+            May you always have reasons to smile, courage to follow your dreams, and people around you who make you feel special. Keep being yourself, keep laughing, and never forget how much your happiness matters to me.<br><br>
+            Happy Birthday, Amisha. I hope this year brings you everything your heart wishes for. 🌙✨<br><br>
+            With love,<br><strong>Akash ❤️</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer reveal">
+    <div class="msg">thanks for visiting, Amisha 🌙</div>
+    <div class="by">made with love by Akash</div>
+  </div>
+
+</div>
+
+<script src="./Happy Birthday, Sudeep_files/sky.js.download"></script>
+<script src="./Happy Birthday, Sudeep_files/main.js.download"></script>
+<script>
+(function(){
+ const music=document.getElementById('birthdayMusic');
+ const button=document.getElementById('musicToggle');
+ async function startMusic(){try{await music.play();button.textContent='🔊 Pause Birthday Music';button.setAttribute('aria-label','Pause ');}catch(e){button.textContent='🎵 Play Birthday Music';button.setAttribute('aria-label','Play ');}}
+ function pauseMusic(){music.pause();button.textContent='🎵 Play Birthday Music';button.setAttribute('aria-label','Play ');}
+ button.addEventListener('click',function(){if(music.paused)startMusic();else pauseMusic();});
+ window.addEventListener('load',startMusic);
+})();
+</script>
+</body>
+</html>
